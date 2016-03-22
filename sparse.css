@@ -1,0 +1,71 @@
+body {
+  background-color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: hsla(221, 12%, 18%, 0.66);
+}
+
+a:link {
+  color: #666;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #666;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+#outer-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 20em;
+}
+
+#outer-container section {
+  width: 50%;
+  min-width: 320px;
+  margin-top: 1em;
+}
+
+ol {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+p {
+  margin-top: 0;
+}
+
+.faded {
+  opacity: 0.01;
+  transition: opacity 3s;
+}
+
+.bookmarklet {
+  font-size: 1.8em;
+  border: 2px dashed #bbb;
+  padding: 0.2em;
+  border-radius: 0.3em
+}
+
+.explain {
+  font-size: smaller;
+}
+
+@media all and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  #outer-container section {
+    width: 90%;
+  }
+}
